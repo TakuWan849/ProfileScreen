@@ -164,6 +164,7 @@ class SettingsViewController: UIViewController {
     }
     
     // MARK: - Section3
+    // ログアウト機能は後で追加する
 
 }
 
