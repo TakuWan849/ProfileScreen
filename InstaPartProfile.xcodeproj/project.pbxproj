@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		F8C5BFDD25655A2F00CC6F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C5BFDC25655A2F00CC6F5D /* AppDelegate.swift */; };
 		F8C5BFDF25655A2F00CC6F5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C5BFDE25655A2F00CC6F5D /* SceneDelegate.swift */; };
-		F8C5BFE125655A2F00CC6F5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C5BFE025655A2F00CC6F5D /* ViewController.swift */; };
 		F8C5BFE425655A2F00CC6F5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C5BFE225655A2F00CC6F5D /* Main.storyboard */; };
 		F8C5BFE625655A3200CC6F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C5BFE525655A3200CC6F5D /* Assets.xcassets */; };
 		F8C5BFE925655A3200CC6F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C5BFE725655A3200CC6F5D /* LaunchScreen.storyboard */; };
+		F8C5C00A25655D2300CC6F5D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C5C00925655D2300CC6F5D /* SettingsViewController.swift */; };
+		F8C5C00D25655D6100CC6F5D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C5C00C25655D6100CC6F5D /* ProfileViewController.swift */; };
+		F8C5C013256580B900CC6F5D /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C5C012256580B900CC6F5D /* extensions.swift */; };
+		F8C5C01625658EC200CC6F5D /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C5C01525658EC200CC6F5D /* EditProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8C5BFD925655A2F00CC6F5D /* InstaPartProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPartProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C5BFDC25655A2F00CC6F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8C5BFDE25655A2F00CC6F5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8C5BFE025655A2F00CC6F5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8C5BFE325655A2F00CC6F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8C5BFE525655A3200CC6F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8C5BFE825655A3200CC6F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8C5BFEA25655A3200CC6F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C5C00925655D2300CC6F5D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F8C5C00C25655D6100CC6F5D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F8C5C012256580B900CC6F5D /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		F8C5C01525658EC200CC6F5D /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		F8C5BFDB25655A2F00CC6F5D /* InstaPartProfile */ = {
 			isa = PBXGroup;
 			children = (
-				F8C5BFDC25655A2F00CC6F5D /* AppDelegate.swift */,
-				F8C5BFDE25655A2F00CC6F5D /* SceneDelegate.swift */,
-				F8C5BFE025655A2F00CC6F5D /* ViewController.swift */,
-				F8C5BFE225655A2F00CC6F5D /* Main.storyboard */,
-				F8C5BFE525655A3200CC6F5D /* Assets.xcassets */,
-				F8C5BFE725655A3200CC6F5D /* LaunchScreen.storyboard */,
+				F8C5C00725655CCE00CC6F5D /* Controllers */,
+				F8C5C00625655CBF00CC6F5D /* Views */,
+				F8C5C00525655CB300CC6F5D /* Models */,
+				F8C5C00325655C7200CC6F5D /* Resources */,
 				F8C5BFEA25655A3200CC6F5D /* Info.plist */,
 			);
 			path = InstaPartProfile;
+			sourceTree = "<group>";
+		};
+		F8C5C00325655C7200CC6F5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8C5BFE525655A3200CC6F5D /* Assets.xcassets */,
+				F8C5BFDC25655A2F00CC6F5D /* AppDelegate.swift */,
+				F8C5BFDE25655A2F00CC6F5D /* SceneDelegate.swift */,
+				F8C5C012256580B900CC6F5D /* extensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8C5C00525655CB300CC6F5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8C5C00625655CBF00CC6F5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8C5C00F25657DF400CC6F5D /* Cells */,
+				F8C5BFE225655A2F00CC6F5D /* Main.storyboard */,
+				F8C5BFE725655A3200CC6F5D /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8C5C00725655CCE00CC6F5D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8C5C00925655D2300CC6F5D /* SettingsViewController.swift */,
+				F8C5C00C25655D6100CC6F5D /* ProfileViewController.swift */,
+				F8C5C01525658EC200CC6F5D /* EditProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F8C5C00F25657DF400CC6F5D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8C5BFE125655A2F00CC6F5D /* ViewController.swift in Sources */,
+				F8C5C013256580B900CC6F5D /* extensions.swift in Sources */,
 				F8C5BFDD25655A2F00CC6F5D /* AppDelegate.swift in Sources */,
+				F8C5C01625658EC200CC6F5D /* EditProfileViewController.swift in Sources */,
 				F8C5BFDF25655A2F00CC6F5D /* SceneDelegate.swift in Sources */,
+				F8C5C00D25655D6100CC6F5D /* ProfileViewController.swift in Sources */,
+				F8C5C00A25655D2300CC6F5D /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
