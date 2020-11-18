@@ -11,7 +11,9 @@ import UIKit
 SettingsViewController
  今回はそれぞれのcellがタップしたら処理機能を持つので
     modelにはhandler(() -> Void)を使ってあげるのがおすすめ
-    -> tableView - edit profile --> EditProfileViewController()に遷移
+    -> tableView -> section1 - edit profile --> EditProfileViewController()に遷移
+                             - Invited Friends
+                             - Save Original Posts
                  - terms of service --> (terms or privacy or help) でそれぞれのwebページに遷移
                  - Log out --> logOutする処理(Firebaseを使う)
  */
@@ -56,12 +58,13 @@ class SettingsViewController: UIViewController {
             セクション1 : [
                 セル1 : (title: "Edit Profile", handler: (Function)),
                 セル2 : (title: "Invited Friends", handler: (Function)),
+                セル3 : (title: "Save Original Posts", handler: (Function)),
             ]
          ]
          */
         
         
-        // editProfile
+        // section1 (edit profile, Invited Friends, )
         data.append([
             SettingsCellModel(title: "Edit Profile") { [weak self] in
                 
@@ -70,21 +73,41 @@ class SettingsViewController: UIViewController {
             },
             SettingsCellModel(title: "Invited Friends") { [weak self] in
                 
-                self?.didTapEditProfile()
+                self?.didTapInvitedFriends()
                 
             },
+            SettingsCellModel(title: "Save Original Posts") { [weak self] in
+                
+                self?.didTapSavePosts()
+            }
             
         ])
+        
+        // section2 (terms of service, privacy, help)
         
         print(data)
     }
     
+    // MARK: - Section1
     private func didTapEditProfile() {
         let vc = EditProfileViewController()
         let navVC = UINavigationController(rootViewController: vc)
         
         present(navVC, animated: true)
     }
+    
+    private func didTapInvitedFriends() {
+        
+    }
+    
+    private func didTapSavePosts() {
+        
+    }
+    
+    // MARK: - Section2
+    
+    
+    // MARK: - Section3
 
 }
 
